@@ -1,0 +1,1 @@
+A responsive to-do list allowing users to add, complete and delete tasks.
