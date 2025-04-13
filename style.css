@@ -1,0 +1,118 @@
+body {
+    background-color: #fdf5e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.open-sans-td {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+#input {
+    background-color: #fdf5e6;
+    border: 1px solid #e0d5c4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#list {
+    background-color: #fdf5e6;
+    border: 1px solid #e0d5c4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 500px;
+}
+
+#input:hover, #list:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7)
+}
+
+#task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#task-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#task-submit {
+    background-color: #fdf5e6;
+    border: 1px solid #e0d5c4;
+    margin-top: 10px;
+}
+
+#list {
+    display: block;
+}
+
+#task-list {
+    padding: 15px;
+}
+
+#task-list li {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+#task-list li:nth-child(odd) {
+    background-color: #fff7e6;
+}
+
+#task-list li:nth-child(even) {
+    background-color: #ffe8d6;
+}
+
+#task-list li:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #ffe8d6;
+    border: 1px solid #e0d5c4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffd1ba;
+    transition: background-color 0.3s ease;
+}
+
+.completed {
+    text-decoration: line-through;
+}
